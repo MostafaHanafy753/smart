@@ -1,0 +1,124 @@
+/* BREADCRUMB */
+.breadcrumb_bar {
+  padding: 80px 0;
+}
+.breadcrumb_bar .title_1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.breadcrumb_bar .dirs_list li:not(:last-child) {
+  margin-right: 10px;
+}
+.breadcrumb_bar .dirs_list li a {
+  font-size: 15px;
+  color: var(--navy);
+  font-weight: 500;
+}
+.breadcrumb_bar .dirs_list li a[clicked] {
+  pointer-events: none;
+  cursor: text;
+  opacity: .7;
+}
+@media only screen and (max-width: 767.98px) {
+  .breadcrumb_bar {
+    padding: 40px 0;
+  }
+  .breadcrumb_bar .title_1 {
+    font-size: 26px;
+  }
+}
+/* --------------------------------- */
+
+/* SECTION I */
+.se_i .content .title_1 {
+  font-size: 36px;
+  color: var(--navy);
+  font-weight: 700;
+}
+.se_i .content .para_1 {
+  font-size: 15px;
+  color: var(--navy);
+}
+/* list */
+.se_i .content .list {
+  margin-top: 73px;
+}
+.se_i .content .list li {
+  font-size: 16px;
+}
+.se_i .content .list li:not(:last-child) {
+  margin-bottom: 7px;
+}
+.se_i .content .list .dot {
+  margin: 0 5px;
+}
+.se_i .content .title_2 {
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.se_i .content .social_list a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--navy);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: var(--navy);
+  transition: all .25s ease;
+}
+.se_i .content .social_list a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+/* controllers */
+.se_i .content_controllers {
+  position: relative;
+  height: 50px;
+  width: 60px;
+  opacity: 1;
+}
+.se_i .content_controllers .lines::before,
+.se_i .content_controllers .lines::after {
+  content: '';
+  width: 2px;
+  height: 24px;
+  background-color: var(--navy);
+  position: absolute;
+  right: 100%;
+  top: 0;
+  transition: .2s cubic-bezier(.23,.24,0,.99);
+  transform-origin: top;
+  display: inline-block!important;
+}
+.se_i .content_controllers .lines::after {
+  top: 24px;
+  transform-origin: bottom;
+}
+.se_i .content_controllers.next_btn .lines::before,
+.se_i .content_controllers.next_btn .lines::after {
+  right: unset;
+  left: 100%;
+}
+.se_i .content_controllers:hover .lines::before {
+  transform: translateY(7px) rotate(45deg);
+}
+.se_i .content_controllers:hover .lines::after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.se_i .content_controllers.next_btn:hover .lines::before {
+  transform: translateY(7px) rotate(-45deg);
+}
+.se_i .content_controllers.next_btn:hover .lines::after  {
+  transform: translateY(-7px) rotate(45deg);
+}
+.se_i .content_controllers .label {
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 700;
+}
+/* --------------------------------- */

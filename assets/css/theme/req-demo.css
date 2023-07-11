@@ -1,0 +1,45 @@
+/* SECTION I */
+/* form_input */
+.se_i .form_input {
+  border: 1px solid rgba(17, 56, 91, 0.2);
+  padding: 27px 30px 16px;
+  transition: all .25s;
+  line-height: 1.2;
+  outline: none;
+  font-size: 15px;
+  color: var(--black);
+  font-weight: 500;
+  resize: none;
+}
+.se_i .form_input:hover {
+  border-color: rgba(17, 56, 91, .5);
+}
+.se_i .form_input:focus {
+  border-color: rgba(17, 56, 91, 1);
+}
+/* placeholder */
+.se_i .placeholder {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 14px;
+  color: var(--black);
+  cursor: text;
+  pointer-events: none;
+  transition: all .25s cubic-bezier(.475,.425,0,.995);
+}
+.se_i .focus_is_active .placeholder {
+  top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* sign */
+.se_i .sign {
+  position: absolute;
+  top: 17px;
+  font-size: 20px;
+  color: orangered;
+  right: 20px;
+  opacity: .5;
+}
+/* --------------------------------- */

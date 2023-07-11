@@ -1,0 +1,429 @@
+/* HEADER */
+header {
+  height: 100vh;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+/* content */
+header::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 2;
+}
+header .content {
+  height: 100vh;
+  z-index: 3;
+}
+/* title_1 */
+header .title_1 {
+  font-size: 64px;
+  color: var(--navy);
+  font-weight: 700;
+}
+/* link_1 */
+header .link_1 {
+  font-size: 16px;
+  color: var(--navy);
+}
+header .link_1:hover {
+  text-decoration: underline !important;
+}
+/* circle */
+header .circle {
+  min-width: 50px;
+  min-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FFF;
+  color: var(--navy);
+  font-weight: 500;
+  font-size: 14px;
+}
+/* header_form */
+header .header_form {
+  background: #FFF;
+  padding: 15px;
+  max-width: 600px;
+  min-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.08) 6px 12px 48px;
+}
+header .header_form input {
+  border: none;
+  padding: 21px 30px;
+  transition: all .25s;
+  line-height: 1.2;
+  outline: none;
+  font-size: 15px;
+  color: var(--black);
+  font-weight: 500;
+  resize: none;
+}
+header .header_form input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #9E9E9E;
+}
+header .header_form input::-moz-placeholder {
+  font-weight: 400;
+  color: #9E9E9E;
+}
+header .header_form input:-ms-input-placeholder {
+  font-weight: 400;
+  color: #9E9E9E;
+}
+header .header_form input::-ms-input-placeholder {
+  font-weight: 400;
+  color: #9E9E9E;
+}
+header .header_form input::placeholder {
+  font-weight: 400;
+  color: #9E9E9E;
+}
+header .header_form input:hover {
+  border-color: rgba(17, 56, 91, .5);
+}
+header .header_form input:focus {
+  border-color: rgba(17, 56, 91, 1);
+}
+/* submit_btn */
+header .header_form .submit_btn {
+  min-width: 170px;
+}
+@media only screen and (max-width: 1199.98px) {
+  /* content */
+  header .content {
+    padding: 300px 0 150px;
+    min-height: auto;
+  }
+  /* title_1 */
+    header .title_1 {
+      font-size: 47px;
+    }
+}
+@media only screen and (max-width: 991.98px) {
+  header {
+    background: #D2DBDA;
+  }
+  /* content */
+  header .content {
+    padding: 280px 0 120px;
+  }
+  /* overlay_text */
+  header .overlay_text {
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .2;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  /* title_1 */
+  header .title_1 {
+    font-size: 34px;
+  }
+  /* content */
+  header .content {
+    padding: 160px 0 100px;
+    min-height: 100vh;
+  }
+  /* overlay_text */
+  header .overlay_text {
+    top: 80px;
+    left: -10px;
+    transform: unset;
+    font-size: 35vw;
+  }
+  /* circle */
+  header .circle {
+    min-width: unset;
+    min-height: unset;
+    width: 20px;
+    height: unset;
+    border-radius: unset;
+    background: unset;
+  }
+  /* header_form */
+  header .header_form {
+    padding: 0;
+    background: transparent;
+    min-width: unset;
+    box-shadow: unset;
+  }
+}
+/* --------------------------------- */
+
+/* SECTION I - FEATURES */
+/* title_2 */
+.se_i .icon {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.se_i .title_2 {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: var(--black);
+}
+/* --------------------------------- */
+
+/* SECTION III - WHY CHOOSE US */
+.se_iii .title_2 {
+  font-size: 64px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  color: var(--black);
+}
+/* para_3 */
+.se_iii .para_3 {
+  font-size: 16px;
+  color: var(--black);
+}
+@media only screen and (max-width: 991.98px) {
+  /* title_2 */
+  .se_iii .title_2 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  /* title_2 */
+  .se_iii .title_2 {
+    font-size: 54px;
+  }
+}
+/* --------------------------------- */
+
+/* SECTION IV - PORTFOLIO */
+/* item_link */
+.se_iv .item .item_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+/* img_c */
+.se_iv .item .img_c {
+  perspective: 1000px;
+}
+/* img_1 */
+.se_iv .item .img_1 {
+  transform: scale(1);
+  transition: transform 2s cubic-bezier(.19,1,.22,1);
+  will-change: transform;
+}
+.se_iv .item:hover .img_1 {
+  transform: scale(.95) rotateY(-9deg);
+}
+/* item_info */
+.se_iv .item .item_info {
+  padding-left: 10px;
+}
+/* item_tag */
+.se_iv .item .item_info .item_tag {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  font-weight: 400;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateZ(5deg) translateY(8px);
+  transform-origin: left;
+  transition: all 1s cubic-bezier(.475,.425,0,.995);
+  will-change: transform;
+  transition-delay: 0s;
+}
+.se_iv .item:hover .item_info .item_tag {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateZ(0) translateY(0);
+}
+/* item_title_1 */
+.se_iv .item .item_info .item_title_1 {
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateZ(5deg) translateY(8px);
+  transform-origin: left;
+  transition: all 1s cubic-bezier(.475,.425,0,.995);
+  will-change: transform;
+  transition-delay: .08s;
+}
+.se_iv .item:hover .item_info .item_title_1 {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateZ(0) translateY(0);
+}
+/* --------------------------------- */
+
+/* SECTION V - PRICING */
+/* item */
+.se_v .item {
+  background: #fff;
+  padding: 40px 30px;
+  border: 1px solid rgba(17, 56, 91, 0.05);
+  min-width: 255px;
+  margin: 0 15px;
+}
+/* popular_item */
+.se_v .item.popular_item {
+  /* background: rgb(252, 252, 252); */
+  border: 1px solid var(--primary);
+}
+.se_v .item.popular_item::after {
+  position: absolute;
+  content: 'P';
+  right: 20px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  background: var(--primary);
+  background-size: 120% auto;
+  border-radius: 50%;
+}
+/* item_name */
+.se_v .item_name {
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/* item_price */
+.se_v .item_price {
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--black);
+  font-family: 'Open Sans', sans-serif;
+}
+.se_v .item_price span {
+  position: relative;
+  font-size: 28px;
+  display: inline-block;
+  width: 20px;
+  top: -13px;
+}
+/* para_1 */
+.se_v .item .para_1 {
+  font-size: 14px;
+  color: var(--black);
+  line-height: 1;
+}
+/* para_2 */
+.se_v .item .para_2 {
+  font-size: 18px;
+  color: var(--black);
+  font-weight: 600;
+}
+/* features_list */
+.se_v .item .features_list {
+  min-height: 230px;
+}
+.se_v .item .features_list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.se_v .item .features_list li {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+}
+.se_v .item .features_list li i {
+  color: var(--primary);
+}
+/* --------------------------------- */
+
+/* SECTION VI - CONTACT */
+/* form_input */
+.se_vi .form_input {
+  border: 1px solid rgba(17, 56, 91, 0.2);
+  padding: 27px 30px 16px;
+  transition: all .25s;
+  line-height: 1.2;
+  outline: none;
+  font-size: 15px;
+  color: var(--black);
+  font-weight: 500;
+  resize: none;
+}
+.se_vi .form_input:hover {
+  border-color: rgba(17, 56, 91, .5);
+}
+.se_vi .form_input:focus {
+  border-color: rgba(17, 56, 91, 1);
+}
+/* placeholder */
+.se_vi .placeholder {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 14px;
+  color: var(--black);
+  cursor: text;
+  pointer-events: none;
+  transition: all .25s cubic-bezier(.475,.425,0,.995);
+}
+.se_vi .focus_is_active .placeholder {
+  top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* sign */
+.se_vi .sign {
+  position: absolute;
+  top: 17px;
+  font-size: 20px;
+  color: orangered;
+  right: 20px;
+  opacity: .5;
+}
+/* --------------------------------- */
+
+/* SECTION VII - FAQs */
+/* title_1 */
+.se_vii .item .title_1 {
+  font-size: 26px;
+  color: var(--black);
+  font-weight: 700;
+}
+/* links_list */
+.se_vii .links_list li a {
+  font-size: 15px;
+  color: var(--black);
+  font-weight: 400;
+}
+.se_vii .links_list li.last_link a {
+  color: var(--black);
+  opacity: .7;
+}
+.se_vii .links_list li a:hover {
+  text-decoration: underline !important;
+}
+/* --------------------------------- */
